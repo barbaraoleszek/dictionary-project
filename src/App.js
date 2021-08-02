@@ -9,7 +9,7 @@ function App() {
       </header>
       <main>
         <div className="row mt-5 justify-content-center">
-        <div className="col col-lg-4"><Dictionary /></div>
+        <div className="col col-lg-8"><Dictionary /></div>
         </div>
       </main>
       <footer><a href="https://github.com/barbaraoleszek/dictionary-project">Coded by Barbara Oleszek-Leszczyńska</a></footer>
