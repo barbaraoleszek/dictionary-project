@@ -5,12 +5,14 @@ function App() {
   return (
     <div className="container">
       <header className="App-header">
-        <h1 className="text-center mt-5">Dictionary</h1>
+        <h1 className="text-center pt-5">Dictionary</h1>
       </header>
       <main>
-        <Dictionary />
+        <div className="row mt-5 justify-content-center">
+        <div className="col col-lg-4"><Dictionary /></div>
+        </div>
       </main>
-      <footer>Coded by Barbara Oleszek-Leszczyńska</footer>
+      <footer><a href="https://github.com/barbaraoleszek/dictionary-project">Coded by Barbara Oleszek-Leszczyńska</a></footer>
     </div>
   );
 }
