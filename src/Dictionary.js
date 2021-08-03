@@ -27,7 +27,7 @@ export default function Dictionary() {
         event.preventDefault();
         // documentation dictionaryapi.dev
         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
-        let pexelsUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=3`;
+        let pexelsUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
         let pexelApiKey = "563492ad6f917000010000018cc14507889e43c0a3e395dac9fd2a6f";
         let headers = { Authorization: `Bearer ${pexelApiKey}` };
 
@@ -38,7 +38,7 @@ export default function Dictionary() {
     return (
         <div className="dictionary">
             <form onSubmit={search}>
-                <input className="form-control" type="search" onChange={handleKeywordChange} />
+                <input className="form-control" placeholder="Looking for meaning? Ask now!" type="search" onChange={handleKeywordChange} />
             </form>
             <Results results={results} />
             <Photos photos={photos} />
